@@ -1,3 +1,4 @@
+
 <%= form_with(model: todo_list, local: true) do |form| %>
   <% if todo_list.errors.any? %>
     <div id="error_explanation">
@@ -10,18 +11,16 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="todo_list_form">
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :todo_list_title %>
+    <%= form.text_field :title, id: :todo_list_title, placeholder: "Add a new task", class: "input_field" %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :todo_list_description %>
+    <%= form.text_area :description, id: :todo_list_description, placeholder: "Add a description", class: "input_field" %>
   </div>
-
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "primary_button" %>
+  </div>
   </div>
 <% end %>

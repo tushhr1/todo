@@ -13,3 +13,102 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+    background-color: #EBEBEB;
+ }
+
+ a:link{
+    text-decoration: none;
+ }
+
+.secondary_button{
+    color: #71717a;
+}
+ .secondary_button:hover{
+    color:black;
+    background-color: white;
+ }
+
+ .primary_button{
+    background-color: #2563eb;
+    border: none;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+ 
+ .primary_button:hover{
+    background-color: #1d4ed8;
+ }
+
+ .container{
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 2px 7px 15px;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: large;
+    margin: 5rem 10rem;
+ }
+
+ .todo_list{
+    margin-bottom: 20px;
+ }
+
+ .todo_list_container{
+    padding: 20px 5rem 7px ;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.25px solid #EBEBEB;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 6px -4px;
+ }
+
+ .todo_list_operation{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+ }
+
+ .todo_list_form{
+    margin: 40px 0px;
+    margin-left: 40%;
+    margin-right: 40%;
+ }
+
+ .input_field{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 13px 0px;
+ }
+
+ .input_field:focus{
+    outline: none;
+ }
+
+ .input_field::placeholder{
+    text-align: left;
+ }
+
+.todo_list_description{
+    padding: 10px 5rem;
+}
+
+.todo_item_form{
+    display: flex;
+    justify-content: space-between;
+    gap:70px;
+    margin: 40px 0px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.todo_item_row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5rem 7px ;
+    border-bottom: 0.25px solid #EBEBEB;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 6px -4px;
+}
